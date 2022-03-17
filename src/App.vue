@@ -1,11 +1,21 @@
 <template>
   <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
+    <!--<router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link> -->
+    
   </div>
   <router-view/>
+  <startPage />
 </template>
-
+<script>
+import startPage from '@/views/news/startPage.vue';
+import StartPage from './views/news/startPage.vue';
+export default {
+  components:{
+    startPage
+  }
+}
+</script>
 <style>
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
