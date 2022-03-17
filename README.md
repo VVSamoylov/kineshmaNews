@@ -17,3 +17,7 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+ git remote add origin git@github.com:VVSamoylov/kineshmaNews.git
+ git push origim master
+ 
