@@ -21,7 +21,7 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
  * git remote add origin git@github.com:VVSamoylov/kineshmaNews.git 
  * git push origim master
  ## добавляем boostrap в проект ##
- * npm install boostrap
+ * npm install bootstrap
  * npm install @popperjs/core
 [ссылка на инструкцию] (https://www.youtube.com/watch?v=oZ9zlS5V5WU)
  * add main.js 
