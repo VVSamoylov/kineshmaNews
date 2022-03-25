@@ -8,7 +8,7 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Политика</a>
+           <router-link class="nav-link active" aria-current="page"  to="/politics">Политика</router-link> 
         </li>
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">Экономика</a>
