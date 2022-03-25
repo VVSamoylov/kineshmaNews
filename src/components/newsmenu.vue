@@ -11,19 +11,19 @@
            <router-link class="nav-link active" aria-current="page"  to="/politics">Политика</router-link> 
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Экономика</a>
+          <router-link  class="nav-link active" aria-current="page" to="/economics"> Экономика </router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Общество</a>
+          <router-link  class="nav-link active" aria-current="page" to="/piple">Общество </router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Проиществия</a>
+          <router-link  class="nav-link active" aria-current="page" to="/incidents"> Проиществия </router-link>
         </li>
                 <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Наука</a>
+          <router-link  class="nav-link active" aria-current="page" to="/science">Наука </router-link>
         </li>
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Спорт</a>
+          <router-link  class="nav-link active" aria-current="page" to="/sports">Спорт </router-link>
         </li>
       </ul>
     </div>
