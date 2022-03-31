@@ -4,24 +4,24 @@
         <form class="row g-3">
         <div class="col-md-6">
             <label for="articleHeader" class="form-label">Заголовок статьи</label>
-            <input v-model="publishedHeader" type="text" class="form-control" id="articleHeader">
+            <input v-model="article.heading" type="text" class="form-control" id="articleHeader">
         </div>
         <div class="col-6">
             <label for="auterName" class="form-label">Автор</label>
-            <input v-model="autor" type="text" class="form-control" id="auterName" >
+            <input v-model="article.autor" type="text" class="form-control" id="auterName" >
         </div>
         <div class="col-6">
             <label for="preview" class="form-label">Текст предпросмотра</label>
-            <textarea v-model="publishedPreview" class="form-control" id="preview" ></textarea>
+            <textarea v-model="article.description" class="form-control" id="preview" ></textarea>
         </div>
         <div class="col-md-2">
             <label for="articleData" class="form-label">Дата публикации</label>
-            <input v-model="publishedDate" type="date" class="form-control" id="articleHeader">
+            <input type="date" class="form-control" id="articleHeader">
         </div>
 
         <div class="col-md-3">
             <label for="categoryName" class="form-label">Категория</label>
-            <select v-model="publishedCategory" id="categoryName" class="form-select">
+            <select v-model="article.category" id="categoryName" class="form-select">
             <option selected>Выберите категорию...</option>
             <option>Политика</option>
             <option>Экономика</option>
@@ -35,13 +35,12 @@
 
         <div class="col-md-12">
             <label for="contentItem" class="form-label">Контент</label>
-            <textarea  v-model="publishedBody" class="form-control" id="contentItem" ></textarea>
+            <textarea  v-model="article.artBody" class="form-control" id="contentItem" ></textarea>
         </div>
 
         <div class="row  justify-content-end">
             <div class="col-3 pRight">
-                <button  class="btn btn-primary">Сохранить</button>
-                <button  class="btn btn-danger">Закрыть</button>
+                <button  v-on:click="saveArticle" class="btn btn-primary">Сохранить</button>
             </div>
         
         </div>
@@ -56,13 +55,20 @@
     name: 'editor',
     data() {
       return {
+          article:{
           autor: '',
-          publishedDate: Date,
-          publishedHeader: '',
-          publishedBody: '',
-          publishedPreview: '',
-          publishedCategory: ''
+          heading: '',
+          artBody: '',
+          description: '',
+          category: '',
+          artDate: ''
+        }
       }
+    },
+    methods:{
+        saveArticle(){
+            this.$store.commit('addArticle', this.$data.article);
+        }
     } 
     
   };

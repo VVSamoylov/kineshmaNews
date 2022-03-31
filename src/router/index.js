@@ -7,7 +7,7 @@ import piple from '@/views/news/piple.vue';
 import sports from '@/views/news/sports.vue';
 import incidents from '@/views/news/incidents.vue';
 import economics from '@/views/news/economics.vue';
-
+import  createArticle from '@/views/admin/createArticle.vue';
 const routes = [
   {
     path: '/',
@@ -45,6 +45,12 @@ const routes = [
     name: '/economics',
     component: economics
   },
+  {
+  path: '/adm/createArticle',
+  name: '/adm/createArticle',
+  component: createArticle
+  },
+  
   {
     path: '/about',
     name: 'About',
