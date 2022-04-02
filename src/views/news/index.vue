@@ -1,5 +1,6 @@
 <template>
 <newsmenu />
+index
 </template>
 
 <script>
