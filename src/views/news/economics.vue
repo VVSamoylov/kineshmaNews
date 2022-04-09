@@ -1,5 +1,6 @@
 <template>
 <newsmenu />
+{{getArt}}
 Экономика
 </template>
 <script>
@@ -8,6 +9,11 @@ export default{
     name: 'economics',
     components:{
         newsmenu
+    },
+    computed:{
+        getArt(){
+            return this.$store.getters.getArticle
+        }
     }
 }
 </script>

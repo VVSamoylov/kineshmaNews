@@ -1,6 +1,7 @@
 <template>
 <newsmenu />
 Наука
+{{getArt}}
 </template>
 <script>
 import newsmenu from '@/components/newsmenu.vue'
