@@ -1,28 +1,39 @@
 <template>
-index
-<ul id="e">
-  <li v-for="art in getArt" :key="art.autor">
-    {{ art.heading}} 
-    {{ art.description }}
-    
-  </li>
-</ul>
-
+<newsmenu />
+<div class="container">
+    <div class="row">
+        <div v-for="item in getArt" :key="item.heading"  class="card">
+        <h5 class="card-header">{{item.heading}}</h5>
+        <div class="card-body">
+            <p class="card-text">{{item.description}}</p>
+            <div class="col-lg-2">
+                <a href="#" class="btn btn-primary">Подробнее...</a>
+            </div>    
+        </div>
+</div>
+    </div>
+</div>
 </template>
 
 <script>
-
+import newsmenu from '@/components/newsmenu';
 export default{
     name: 'index',
     components:{
-    
+        newsmenu
     },
     computed:{
         getArt(){
-            return  this.$store.getters.getArticle;
-           
-            
+            return this.$store.getters.getArticle
         }
     }
 }
 </script>
+
+<style>
+.card{
+    border-color:blue;
+    padding-left:0px;
+    padding-right:0px;
+}
+</style>

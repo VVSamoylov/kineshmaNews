@@ -35,4 +35,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 * createApp(App).use(store).use(router).mount('#app')
 * внизу добавляем javascript от boostrap
 * import 'bootstrap/dist/js/bootstrap.js'
+* добавить firebase  npm install firebase   vue create freebase-auth
+
 

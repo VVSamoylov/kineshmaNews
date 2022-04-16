@@ -1,5 +1,4 @@
 <template>
-  <newsMenu/>
   <router-view/>
 </template>
 <script>

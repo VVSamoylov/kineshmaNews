@@ -1,13 +1,16 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import politics from '@/views/news/politics.vue';
-import index from '@/views/news/index.vue';
-import science from '@/views/news/science.vue';
-import piple from '@/views/news/piple.vue';
-import sports from '@/views/news/sports.vue';
-import incidents from '@/views/news/incidents.vue';
-import economics from '@/views/news/economics.vue';
-import  createArticle from '@/views/admin/createArticle.vue';
+
+import politics from '@/views/news/politics.vue'
+import index from '@/views/news/index.vue'
+import economics from '@/views/news/economics.vue'
+import incidents from '@/views/news/incidents.vue'
+import piple from '@/views/news/piple.vue'
+import science from '@/views/news/science.vue'
+import sports from '@/views/news/sports.vue'
+import createArticle from '@/views/admin/createArticle.vue'
+import login from '@/views/news/login.vue'
+
 const routes = [
   {
     path: '/',
@@ -20,6 +23,7 @@ const routes = [
     component: politics
   },
   {
+
     path: '/piple',
     name: '/piple',
     component: piple
@@ -32,25 +36,29 @@ const routes = [
   {
     path: '/sports',
     name: '/sports',
-    component:  sports
 
-  },
-  {
-    path: '/incidents',
-    name: '/incidents',
-    component: incidents
+    component: sports
   },
   {
     path: '/economics',
-    name: '/economics',
+    name: 'economics',
     component: economics
   },
   {
-  path: '/adm/createArticle',
-  name: '/adm/createArticle',
-  component: createArticle
+    path: '/incidents',
+    name: 'incidents',
+    component: incidents
   },
-  
+  {
+    path: '/login',
+    name: 'login',
+    component: login
+  },
+  {
+    path: '/admin/create',
+    name: '/admin/create',
+    component: createArticle
+  },
   {
     path: '/about',
     name: 'About',

@@ -2,23 +2,29 @@ import { createStore } from 'vuex'
 
 export default createStore({
   state: {
-    article:  [{
-      heading: 'test getters',
-      autor: 'Куприн',
-      description: 'Гранатовый браслет рассказ',
-      artBody: 'Рассказ о гранатовом браслете',
-      artDate: new Date()
-    },{
-      heading: 'Заголовок 2',
-      autor: 'Чехов',
-      description: 'Гроза рассказ',
-      artBody: 'Рассказ о грозе',
-      artDate: new Date()
-    }]
+
+    article: [{
+      heading: 'Статья первая',
+      content: 'контент 1',
+      autor: 'Бублико',
+      category: 'Общество',
+      description: 'Пожирание бублико',
+      dateArticle: ' '
+    },
+    {
+      heading: 'Статья вторая',
+      content: 'контент 2',
+      autor: 'Колбаскин',
+      category: 'Общество',
+      description: 'Пожирание колбасы',
+      dateArticle: ' '
+    }
+
+    ]
   },
   mutations: {
-    addArticle(state, payload){
-      state.article.push(payload);
+    addArt(state, playload){
+      state.article.push(playload)
     }
   },
   actions: {
@@ -30,6 +36,11 @@ export default createStore({
     getArticle: state =>{
       return state.article
     }
+  },
+  getters:{
+      getArticle: state => {
+        return state.article
+      }
   },
   modules: {
   }
