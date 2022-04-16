@@ -17,6 +17,7 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
 ## Подключение github ##
  * git remote add origin git@github.com:VVSamoylov/kineshmaNews.git 
  * git push origim master
@@ -31,6 +32,9 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 * import App from './App.vue'
 * import router from './router'
 * import store from './store'
-* createApp(App).use(store).use(router).mount('#app')
+* createApp(App).use(store).use(router).mount('#app') 
 * внизу добавляем javascript от boostrap
 * import 'bootstrap/dist/js/bootstrap.js'
+* добавить firebase  npm install firebase   vue create freebase-authcd  
+
+
