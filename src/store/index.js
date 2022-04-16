@@ -4,6 +4,7 @@ export default createStore({
   state: {
 
     article: [{
+      id: 123,
       heading: 'Статья первая',
       content: 'контент 1',
       autor: 'Бублико',
@@ -12,6 +13,7 @@ export default createStore({
       dateArticle: ' '
     },
     {
+      id: 234,
       heading: 'Статья вторая',
       content: 'контент 2',
       autor: 'Колбаскин',

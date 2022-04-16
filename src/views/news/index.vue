@@ -6,8 +6,9 @@
         <h5 class="card-header">{{item.heading}}</h5>
         <div class="card-body">
             <p class="card-text">{{item.description}}</p>
+            {{item.id}}
             <div class="col-lg-2">
-                <a href="#" class="btn btn-primary">Подробнее...</a>
+                <router-link  class="btn btn-primary"  :to="{ name: 'article', params:{id: item.id }}">Подробнее </router-link>
             </div>    
         </div>
 </div>
@@ -30,7 +31,7 @@ export default{
 }
 </script>
 
-<style>
+<style scoped>
 .card{
     border-color:blue;
     padding-left:0px;
