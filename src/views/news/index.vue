@@ -1,5 +1,6 @@
 <template>
 <newsmenu />
+Новости
 <div class="container">
     <div class="row">
         <div v-for="item in getArt" :key="item.heading"  class="card">
@@ -8,7 +9,7 @@
             <p class="card-text">{{item.description}}</p>
             {{item.id}}
             <div class="col-lg-2">
-                <router-link  class="btn btn-primary"  :to="{ name: 'article', params:{id: item.id }}">Подробнее </router-link>
+                <router-link  class="btn btn-primary"  :to="{ name: 'article', params:{id: item.id }}">Подробнее... </router-link>
             </div>    
         </div>
 </div>
