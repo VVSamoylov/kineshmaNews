@@ -8,11 +8,18 @@ import piple from '@/views/news/piple.vue'
 import science from '@/views/news/science.vue'
 import sports from '@/views/news/sports.vue'
 import createArticle from '@/views/admin/createArticle.vue'
+import article from '@/views/news/article.vue'
 const routes = [
   {
     path: '/',
     name: 'index',
     component: index
+  },
+  {
+    path:'/article/:id',
+    name:'article',
+    props: true,
+    component: article
   },
   {
     path: '/politics',

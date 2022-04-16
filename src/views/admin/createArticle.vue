@@ -52,6 +52,7 @@ export default {
     data(){
         return{
             artcile:{
+               id: Date(),
                heading: '',
                content: '',
                autor: '',
