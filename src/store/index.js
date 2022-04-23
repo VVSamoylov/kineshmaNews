@@ -8,7 +8,7 @@ export default createStore({
       heading: 'Статья первая',
       content: 'контент 1',
       autor: 'Бублико',
-      category: 'Общество',
+      category: '1',
       description: 'Пожирание бублико',
       dateArticle: ' '
     },
@@ -17,7 +17,7 @@ export default createStore({
       heading: 'Статья вторая',
       content: 'контент 2',
       autor: 'Колбаскин',
-      category: 'Общество',
+      category: '2',
       description: 'Пожирание колбасы',
       dateArticle: ' '
     }

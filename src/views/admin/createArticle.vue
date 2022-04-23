@@ -17,13 +17,13 @@
             <div class="col-md-4">
               <label for="category" class="form-label">Категория</label>
               <select v-model="artcile.category" id="category" class="form-select">
-                <option selected>Выберите категорию...</option>
-                <option>Политика</option>
-                <option>Экономика</option>
-                <option>Общество</option>
-                <option>Проишествия</option>
-                <option>Наука</option>
-                <option>Спорт</option>
+                <option value ="0" selected>Выберите категорию...</option>
+                <option value = "1" >Политика</option>
+                <option value = "2">Экономика</option>
+                <option value = "3">Общество</option>
+                <option value = "4">Проишествия</option>
+                <option value = "5">Наука</option>
+                <option value = "6">Спорт</option>
               </select>
             </div>
     <div class="col-md-2">
