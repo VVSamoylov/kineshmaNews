@@ -27,6 +27,13 @@ export default createStore({
   mutations: {
     addArt(state, playload){
       state.article.push(playload)
+    },
+    deleteArt(state, playload){
+      for(let i = 0; i < state.article.length; i++){
+        if(state.article[i].id == playload){
+          state.article = state.article.splice(i);
+        }
+      }
     }
   },
   actions: {

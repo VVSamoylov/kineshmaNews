@@ -8,9 +8,14 @@
             <div class="card-body">
                 <p class="card-text">{{item.description}}</p>
                 {{item.id}}
-                <div class="col-lg-2">
-                    <router-link  class="btn btn-primary"  :to="{ name: 'editartice', params:{id: item.id }}">Редактировать... </router-link>
-                </div>    
+                <div class="row">
+                    <div class="col-2 align-self-start">
+                        <router-link  class="btn btn-primary"  :to="{ name: 'editartice', params:{id: item.id }}">Редактировать... </router-link>
+                    </div>    
+                    <div class="col-2">
+                        <button v-on:click="deleteItem(item.id)" class="btn btn-danger"  >Удалить...{{item.id}} </button>
+                    </div>    
+                </div>
             </div>
         </div>
     </div>
@@ -28,6 +33,12 @@ export default{
         getArt(){
             return this.$store.getters.getArticle
         }
+    }, 
+    methods:{
+      deleteItem(id){
+          this.$store.commit('deleteArt', id)
+          console.log(id)
+      }
     }
 }
 </script>
