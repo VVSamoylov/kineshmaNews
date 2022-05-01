@@ -11,6 +11,8 @@ import sports from '@/views/news/sports.vue'
 import createArticle from '@/views/admin/createArticle.vue'
 import login from '@/views/news/login.vue'
 import article from '@/views/news/article.vue'
+import indexAdmin from '@/views/admin/indexAdmin.vue'
+import editartice from '@/views/admin/editArticle.vue'
 
 const routes = [
   {
@@ -23,6 +25,12 @@ const routes = [
     name:'article',
     props: true,
     component: article
+  },
+  {
+    path:'/admin/editartice/:id',
+    name:'editartice',
+    props: true,
+    component: editartice
   },
   {
     path: '/politics',
@@ -65,6 +73,11 @@ const routes = [
     path: '/admin/create',
     name: '/admin/create',
     component: createArticle
+  },
+  {
+    path: '/admin/list',
+    name: '/admin/list',
+    component: indexAdmin
   },
   {
     path: '/about',

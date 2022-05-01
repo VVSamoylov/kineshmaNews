@@ -1,18 +1,25 @@
 <template>
+
 <div class="container">
     <div class="row">
-        <h1>  Заголовок </h1>
-           {{Art}}
-        <p> ghhjjk</p>
+    <newsmenu />
+        <h1>  {{Art.heading}} </h1>
+           
+        <p> {{Art.content}} </p>
 
-            <p> autor </p>
+            <p> {{Art.autor}} </p>
+            <div > {{Art.dateArticle}} </div>
     </div>
 </div>
 
 </template>
 <script>
+import newsmenu from '@/components/newsmenu'
 export default {
     name: 'artcile',
+    components:{
+        newsmenu
+    },
     data(){
         return{
             article:''

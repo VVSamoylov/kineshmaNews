@@ -47,8 +47,11 @@ export default createStore({
           }
         } */
         return state.article.find(art => art.id == id)
+      },
+      getArticlePolitics: state =>{
+         return state.article.find(art => art.category == '1' );
+         
       }
-    
   },
   modules: {
   }
