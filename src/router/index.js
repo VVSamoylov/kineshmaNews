@@ -34,23 +34,23 @@ const routes = [
   },
   {
     path: '/politics',
-    name: '/politics',
+    name: 'politics',
     component: politics
   },
   {
 
     path: '/piple',
-    name: '/piple',
+    name: 'piple',
     component: piple
   },
   {
     path: '/science',
-    name: '/science',
+    name: 'science',
     component: science
   },
   {
     path: '/sports',
-    name: '/sports',
+    name: 'sports',
 
     component: sports
   },
@@ -71,12 +71,12 @@ const routes = [
   },
   {
     path: '/admin/create',
-    name: '/admin/create',
+    name: 'admin/create',
     component: createArticle
   },
   {
     path: '/admin/list',
-    name: '/admin/list',
+    name: 'admin/list',
     component: indexAdmin
   },
   {

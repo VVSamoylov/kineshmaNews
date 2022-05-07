@@ -29,9 +29,7 @@
         <li class="nav-item">
            <router-link class="nav-link active" aria-current="page"  to="/admin/list">Sign in</router-link> 
         </li>
-        <li class="nav-item">
-           <router-link class="nav-link active" aria-current="page"  to="/login">Login</router-link> 
-        </li>
+       
       </ul>
     </div>
   </div>

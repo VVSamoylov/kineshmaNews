@@ -35,7 +35,7 @@
       <textarea v-model="artcile.content" type="text" class="form-control" id="content" ></textarea>
     </div>
     <div class="col-12">
-      <button v-on:click="addArticle" class="btn btn-primary">Сохранить</button>
+      <button v-on:click="sArticle" class="btn btn-primary">Сохранить</button>
     </div>
   </form>
 
@@ -65,9 +65,8 @@ export default {
         }
     },
     methods:{
-        addArticle(){
-                this.$store.commit('addArt', this.artcile)
-                console.log(this.artcile.id)
+        sArticle(){
+                this.$store.commit('saveArticle', this.artcile)
                 this.$router.push('/')
         }
     },

@@ -36,6 +36,11 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 * внизу добавляем javascript от boostrap
 * import 'bootstrap/dist/js/bootstrap.js'
 * добавить firebase  npm install firebase   vue create freebase-authcd  
+* npm install -g firebase-tools
+* firebase login
+* firebase init
+* firebase deploy
+
 veniaminsamoylov@gmail.com
 
 
