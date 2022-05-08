@@ -27,7 +27,7 @@ export default{
     },
     computed:{
         getArt(){
-            return this.$store.getters.getArticlePolitics(1)
+            return this.$store.getters.getArticleSort(1)
             
         }
     }

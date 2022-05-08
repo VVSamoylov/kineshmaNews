@@ -3,26 +3,7 @@ import { createStore } from 'vuex'
 export default createStore({
   state: {
 
-    article: [{
-      id: 123,
-      heading: 'Статья первая',
-      content: 'контент 1',
-      autor: 'Бублико',
-      category: '1',
-      description: 'Пожирание бублико',
-      dateArticle: ' '
-    },
-    {
-      id: 234,
-      heading: 'Статья вторая',
-      content: 'контент 2',
-      autor: 'Колбаскин',
-      category: '2',
-      description: 'Пожирание колбасы',
-      dateArticle: ' '
-    }
-
-    ]
+    article: []
   },
   mutations: {
     addArt(state, playload){
@@ -59,7 +40,7 @@ export default createStore({
         } */
         return state.article.find(art => art.id == id)
       },
-      getArticlePolitics: state =>(category) => {
+      getArticleSort: state =>(category) => {
          return state.article.filter(art => art.category == category );
          
       }
