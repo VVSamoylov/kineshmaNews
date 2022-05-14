@@ -26,7 +26,7 @@ export default{
     },
     computed:{
         getArt(){
-            return this.$store.getters.getArticle
+            return this.$store.getters.getArticleSort(4)
         }
 
     }

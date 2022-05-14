@@ -13,7 +13,7 @@
                         <router-link  class="btn btn-primary"  :to="{ name: 'editartice', params:{id: item.id }}">Редактировать... </router-link>
                     </div>    
                     <div class="col-2">
-                        <button v-on:click="deleteItem(item.id)" class="btn btn-danger"  >Удалить...{{item.id}} </button>
+                        <button v-on:click="deleteItem(item.id)" class="btn btn-danger"  >Удалить </button>
                     </div>    
                 </div>
             </div>
